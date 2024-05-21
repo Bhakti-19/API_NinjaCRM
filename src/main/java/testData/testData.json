@@ -1,0 +1,20 @@
+{
+	"headers": {
+		"Content-Type": "application/json"
+	},
+	"payloads": {
+		"login": {
+			"username": "mithun@ta.com",
+			"password": "mithun"
+		},
+		"addUser": {
+		}
+	},
+	"endpoints": {
+		"login": "/login",
+		"adddata": "/addData",
+		"getdata": "/getdata",
+		"delete": "/deleteData",
+		"logout": ""
+	}
+}

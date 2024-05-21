@@ -9,12 +9,19 @@ import io.restassured.response.Response;
 
 public class RestUtils {
 
-	public static Response postReq(HashMap<String, String> headers, String payload, String path) {
+	public static Response postReq(HashMap<String, String> headers, Object payload, String path) {
 
 		Response loginResponse = RestAssured.given().headers(headers).when().body(payload).post(path).then().statusCode(201)
 				.extract().response();
 		return loginResponse;
 	}
+	
+//	public static Response postReq(String header, String payload, String path) {
+//
+//		Response loginResponse = RestAssured.given().contentType(path).when().body(payload).post(path).then().statusCode(201)
+//				.extract().response();
+//		return loginResponse;
+//	}
 
 	public static Response putReq(HashMap<String, String> headers, String payload, String path) {
 		Response putRes = RestAssured.given().headers(headers).when().body(payload).put(path).then().statusCode(200)

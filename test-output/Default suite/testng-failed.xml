@@ -7,7 +7,7 @@
         <methods>
           <include name="initialize"/>
           <include name="generateTokenForTests"/>
-          <include name="addUserTest_TC02"/>
+          <include name="loginTest_TC01"/>
         </methods>
       </class> <!-- tests.ApiPortalTest -->
     </classes>
