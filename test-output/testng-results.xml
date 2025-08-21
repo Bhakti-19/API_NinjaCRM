@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-21T22:28:08 IST" name="Default suite" finished-at="2024-05-21T22:28:12 IST" duration-ms="3627">
+  <suite started-at="2025-08-20T20:55:12 CDT" name="Default suite" finished-at="2025-08-20T20:55:16 CDT" duration-ms="3927">
     <groups>
     </groups>
-    <test started-at="2024-05-21T22:28:08 IST" name="Default test" finished-at="2024-05-21T22:28:12 IST" duration-ms="3627">
+    <test started-at="2025-08-20T20:55:12 CDT" name="Default test" finished-at="2025-08-20T20:55:16 CDT" duration-ms="3927">
       <class name="tests.ApiPortalTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.ApiPortalTest@506ae4d4]" started-at="2024-05-21T22:28:08 IST" name="initialize" finished-at="2024-05-21T22:28:09 IST" duration-ms="158" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ApiPortalTest@4218d6a3]" started-at="2025-08-20T20:55:12 CDT" name="setUp" finished-at="2025-08-20T20:55:12 CDT" duration-ms="466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.ApiPortalTest@4218d6a3]" started-at="2025-08-20T20:55:12 CDT" name="initialize" finished-at="2025-08-20T20:55:14 CDT" depends-on-methods="tests.BaseTest.setUp" duration-ms="1920" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method is-config="true" signature="generateTokenForTests()[pri:0, instance:tests.ApiPortalTest@506ae4d4]" started-at="2024-05-21T22:28:09 IST" name="generateTokenForTests" finished-at="2024-05-21T22:28:09 IST" duration-ms="1" status="PASS">
+        <test-method signature="TC3_Successful_Campaign_Creation()[pri:0, instance:tests.ApiPortalTest@4218d6a3]" started-at="2025-08-20T20:55:14 CDT" name="TC3_Successful_Campaign_Creation" finished-at="2025-08-20T20:55:15 CDT" duration-ms="882" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- generateTokenForTests -->
-        <test-method signature="loginTest_TC01()[pri:0, instance:tests.ApiPortalTest@506ae4d4]" started-at="2024-05-21T22:28:09 IST" name="loginTest_TC01" finished-at="2024-05-21T22:28:12 IST" duration-ms="3456" status="PASS">
+        </test-method> <!-- TC3_Successful_Campaign_Creation -->
+        <test-method signature="login()[pri:0, instance:tests.ApiPortalTest@4218d6a3]" started-at="2025-08-20T20:55:15 CDT" name="login" finished-at="2025-08-20T20:55:16 CDT" duration-ms="600" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest_TC01 -->
+        </test-method> <!-- login -->
       </class> <!-- tests.ApiPortalTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

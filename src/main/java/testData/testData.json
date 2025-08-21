@@ -4,17 +4,35 @@
 	},
 	"payloads": {
 		"login": {
-			"username": "mithun@ta.com",
-			"password": "mithun"
+			"username": "rmgyantra",
+			"password": "rmgy@9999"
 		},
 		"addUser": {
+			    "campaignId": "",
+			    "campaignName": "AutoTechExpo123",
+			    "campaignStatus": "ongoing",
+			    "targetSize": 25,
+			    "expectedCloseDate": "2025-09-30",
+			    "targetAudience": "Tech Companies",
+			    "description": "This Campaign is to reach out technology companies"
 		}
 	},
 	"endpoints": {
 		"login": "/login",
-		"adddata": "/addData",
-		"getdata": "/getdata",
+		"adddata": "/campaign",
+		"getdata": "/campaign/all?page=undefined&size=10",
 		"delete": "/deleteData",
 		"logout": ""
 	}
 }
+/*
+{
+    "campaignId": "CAM07131",
+    "campaignName": "AutoTechExpo",
+    "campaignStatus": "ongoing",
+    "targetSize": 25,
+    "expectedCloseDate": "2025-09-30",
+    "targetAudience": "Tech Companies",
+    "description": "This Campaign is to reach out technology companies"
+}
+*/

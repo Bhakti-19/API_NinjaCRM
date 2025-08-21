@@ -11,9 +11,9 @@ public class RestUtils {
 
 	public static Response postReq(HashMap<String, String> headers, Object payload, String path) {
 
-		Response loginResponse = RestAssured.given().headers(headers).when().body(payload).post(path).then().statusCode(201)
+		Response postResponse = RestAssured.given().headers(headers).when().body(payload).post(path).then().statusCode(201)
 				.extract().response();
-		return loginResponse;
+		return postResponse;
 	}
 	
 //	public static Response postReq(String header, String payload, String path) {
@@ -37,6 +37,7 @@ public class RestUtils {
 
 	}
 
+	
 	public static Response deleteReq(HashMap<String, String> headers, String payload, String path) {
 		Response delRes = RestAssured.given().headers(headers).when().body(payload).delete(path).then().statusCode(200)
 				.extract().response();

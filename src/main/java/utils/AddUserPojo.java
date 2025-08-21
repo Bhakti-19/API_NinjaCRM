@@ -4,48 +4,59 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class AddUserPojo {
 	
-	private String accountno;
-	private String departmentno;
-	private String salary;
-	private String pincode;
-//	private String userid;
-//	private String id;
-	
+	private String campaignId;
+	private String campaignName;
+	private String campaignStatus;
+	private String description;
+	private String expectedCloseDate;
+	private String targetAudience;
+	private String targetSize;
+		
 	
 	public AddUserPojo(String accountno, String departmentno, String salary, String pincode) {
-		this.accountno = accountno;
-		this.departmentno = departmentno;
-		this.salary = salary;
-		this.pincode = pincode;
-//		this.userid = userid;
-//		this.id = id;
+		this.campaignId = campaignId;
+		this.campaignName = campaignName;
+		this.campaignStatus = campaignStatus;
+		this.targetSize = targetSize;
+		this.expectedCloseDate = expectedCloseDate;
+		this.targetAudience = targetAudience;
+		this.description = description;
+		
 	}
 	@JsonProperty("wrapper")
-	public String getAccountNo() {
-		return accountno;
-	}
-	
-	@JsonProperty("wrapper")
-	public String getSalary() {
-		return salary;
+	public String getCampaignId() {
+		return campaignId;
 	}
 	
 	@JsonProperty("wrapper")
-	public String getPincode() {
-		return pincode;
+	public String getCampaignName() {
+		return campaignName;
 	}
 	
 	@JsonProperty("wrapper")
-	public String getDepartmentNo() {
-		return departmentno;
+	public String getCampaignStatus() {
+		return campaignStatus;
+	}	
+
+	@JsonProperty("wrapper")
+	public String gettargetSize() {
+		return targetSize;
 	}
-//	public String getuserid() {
-//		return userid;
-//	}
-//	public String getid() {
-//		return id;
-//	}
 	
+	@JsonProperty("wrapper")
+	public String getExpectedCloseDate() {
+		return expectedCloseDate;
+	}	
+
+	@JsonProperty("wrapper")
+	public String getTargetAudience() {
+		return targetAudience;
+	}
 	
+	@JsonProperty("wrapper")
+	public String getDescription() {
+		return description;
+	}
+		
 
 }

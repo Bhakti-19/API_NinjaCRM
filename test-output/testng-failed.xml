@@ -6,8 +6,8 @@
       <class name="tests.ApiPortalTest">
         <methods>
           <include name="initialize"/>
-          <include name="generateTokenForTests"/>
-          <include name="loginTest_TC01"/>
+          <include name="TC3_Successful_Campaign_Creation"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- tests.ApiPortalTest -->
     </classes>
